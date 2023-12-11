@@ -1,0 +1,14 @@
+const circle = {
+    radius: 1,
+    draw() {
+        console.log("draw");
+    }
+};
+
+// cloning the circle object in another object with the help of assign method
+const another = Object.assign({}, circle);  // takes 2 arguments - new object and the source object which needs to be copied in the new object
+console.log(another);
+
+// another way is to use the spread operator (...)
+const another2 = { ...circle };
+console.log(another2);
